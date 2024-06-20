@@ -1,0 +1,87 @@
+/* Login.css */
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0; /* Color de fondo general */
+}
+
+.login-content {
+    display: flex;
+    max-width: 800px; /* Ancho máximo del contenido */
+    margin: 0 auto; /* Centrar en pantalla */
+    background-color: #fff; /* Color de fondo del contenido */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+.login-form-container {
+    flex: 1; /* Ocupa todo el espacio disponible */
+    padding: 40px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.form-group input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.btn-login {
+    background-color: #B0D8DA; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-login:hover {
+    background-color: #76646f; /* Color de fondo del botón al pasar el mouse */
+}
+
+.login-message {
+    flex:0.8; /* Ocupa todo el espacio disponible */
+    padding: 40px;
+    background-color: #B0D8DA; /* Color de fondo del mensaje */
+    color: #fff; /* Color del texto del mensaje */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px 8px 8px 6px;
+}
+
+.login-message h3 {
+    margin-bottom: 20px;
+}
+
+.login-message p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.login-message img {
+    max-width: 60%;
+    height: auto;
+    transform: rotate(5deg);
+    margin-top: 10%;
+}
