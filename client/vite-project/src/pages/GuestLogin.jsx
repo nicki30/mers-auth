@@ -20,14 +20,13 @@ const GuestLogin = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            // Aquí puedes agregar la lógica para enviar los datos del invitado al servidor si es necesario
-            // Por ejemplo, enviarlos como parte de un formulario o realizar una acción específica
-            // dependiendo de los requisitos de tu aplicación.
+            // Enviar datos al servidor usando Axios
+        const response = await axios.post('/api/guests/register', formData);
 
-            // Ejemplo de solicitud ficticia:
-            // const response = await axios.post('/guest-login', formData);
+        // Manejar la respuesta si es necesario
+        console.log('Respuesta del servidor:', response.data);
 
-            // Simplemente mostrar un mensaje en este caso:
+        // Mostrar mensaje de éxito
             toast.success('Ingreso como invitado exitoso. ¡Bienvenido a Mental Oasis!');
             navigate('/'); // Redireccionar a la página principal u otra ubicación según sea necesario
         } catch (error) {

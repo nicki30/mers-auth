@@ -3,6 +3,7 @@ const router = express.Router();
 const cors = require('cors');
 const { body, validationResult } = require('express-validator');
 const { test, registerUser, loginUser } = require('../controllers/authController');
+const verificarToken = require ('../middleware/verificarToken');
 
 // Middleware CORS para permitir solicitudes desde http://localhost:5173
 router.use(
@@ -53,6 +54,12 @@ router.post(
     ],
     loginUser
 );
+
+// Ruta protegida: Ejemplo de ruta que requiere token JWT para acceder
+router.get('/rutaProtegida', verificarToken, (req, res) => {
+    // Si se pasa la verificación del token, se puede proceder
+    res.json({ mensaje: 'Esta es una ruta protegida' });
+});
 
 module.exports = router;
 

@@ -202,10 +202,14 @@ const Login = () => {
 
             if (data.error === 'El correo electrónico no está registrado') {
                 toast.error('El correo electrónico no está registrado');
-            } else if (data.message === 'Inicio de sesión exitoso') {
+            } else if (data.token) {
+                
+                localStorage.setItem('token', data.token);
+
                 toast.success('Inicio de sesión exitoso. Bienvenido a Mental Oasis');
                 setFormData({ email: '', password: '' });
                 navigate('/');
+            } else if (data.message === 'Inicio de sesión exitoso') {
             } else {
                 toast.error('Error desconocido al intentar iniciar sesión. Por favor, inténtalo de nuevo más tarde.');
             }

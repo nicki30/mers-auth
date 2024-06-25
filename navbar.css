@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600700;800&display=swap%27');
+
+      .container-fluid {
+          margin-top: 0;
+          margin-left: 0;
+          margin-right: 20px;
+          font-family: manrope;
+      }
+      .custom-btn-width {
+    width: 200px;
+      }
+      .text-right-margin {
+          margin-right: 10px;
+      }
+       /* Estilo para el botón de Invitado */
+       .btn-invitado {
+          background-color: #E6D4CF;
+          /* Color de fondo */
+          border-color: #E6D4CF;
+          /* Color del borde */
+          color: #000000;
+          /* Color del texto */
+      }
+      .btn-invitado:hover{
+        background-color: #fca0dc;
+          /* Color de fondo */
+          border-color: #E6D4CF;
+          /* Color del borde */
+          color: #000000;
+          /* Color del texto */
+      }
+      .btn-registrarse:hover{
+        background-color: #d09def;
+          /* Color de fondo */
+          border-color: #DDCFE6;
+          /* Color del borde */
+          color: #000000;
+          /* Color del texto */
+      }
+      /* Estilo para el botón de Registrarse */
+      .btn-registrarse {
+          background-color: #DDCFE6;
+          /* Color de fondo */
+          border-color: #DDCFE6;
+          /* Color del borde */
+          color: #000000;
+          /* Color del texto */
+      }
+
+      .btn-iniciarsesion {
+        background-color: #b1f6eb;
+        /* Color de fondo */
+        border-color: #E6D4CF;
+        /* Color del borde */
+        color: #000000;
+        /* Color del texto */
+        margin-left: 10px;
+    }
+    
+    .btn-iniciarsesion:hover{
+      background-color: #fca0dc;
+        /* Color de fondo */
+        border-color: #E6D4CF;
+        /* Color del borde */
+        color: #000000;
+        /* Color del texto */
+    }
+
+      /* Estilos de hover para ambos botones */
+      
+      .btn-invitado:hover,
+      .btn-iniciarsesion:hover,
+      .btn-registrarse:hover {
+          opacity: 0.8;
+          /* Reducción de la opacidad al pasar el mouse */
+      }
+      /* Estilos de sombreado para el texto centrado al hacer hover */
+      .centered-text:hover {
+          text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+          /* Sombreado del texto */
+      }
+
+      .navbar-transparent {
+        background-color: transparent !important;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        z-index: 1;
+        margin-bottom: 20px;
+      }
+
+
+      /* Estilo de degradado para el navbar */
+      .background-image {
+          background-image: url('./pic/unnamed.jpg');
+          background-size: cover;
+          height: calc(100vh - 100px); 
+          margin-bottom: 20px;
+      }
+      
+      
+    
+      .hover-underline:hover {
+        color: rgb(188, 143, 255) !important;
+        text-decoration: underline !important;
+      }
+      .hover-sin-underline:hover {
+        color: rgb(188, 143, 255) !important;
+        
+      }
+
+
+
