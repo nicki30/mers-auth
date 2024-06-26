@@ -5,7 +5,7 @@
 const jwt = require('jsonwebtoken');
 const nodemailer = require('nodemailer');
 const bcrypt = require('bcrypt');
-const User = require('./server/models/user');
+const User = require('../server/models/user');
 const { hashPassword, comparePassword } = require('../auth/auth');
 
 // Generar un token único para restablecimiento de contraseña
