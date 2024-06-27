@@ -13,7 +13,7 @@ const ForgotPassword = () => {
         e.preventDefault();
         try {
             // Enviar la solicitud POST al servidor
-            const response = await axios.post('/api/forgot-password', { email }); // Ajusta la ruta según tu configuración
+            const response = await axios.post('/api/auth/forgot-password', { email });// Ajusta la ruta según tu configuración
             const { data } = response;
 
             if (data.success) {

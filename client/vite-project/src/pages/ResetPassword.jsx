@@ -8,6 +8,8 @@ import osito from '../components/osito.jpeg'; // Importamos la imagen (debe ajus
 const ResetPassword = () => {
     const navigate = useNavigate();
     const { token } = useParams(); // Obtener el token de reset desde la URL
+    console.log(token);
+    console.log(`Recibida solicitud POST en /api/auth/reset-password/${token}`);
     const [formData, setFormData] = useState({
         password: '',
         confirmPassword: ''
@@ -23,7 +25,8 @@ const ResetPassword = () => {
         }
 
         try {
-            const response = await axios.post('/api/reset-password/${token}', { password, token });
+            // const response = await axios.post('/api/reset-password/${token}', { password, token });
+            const response = await axios.post(`/api/auth/reset-password/${token}`, { password, token }); // Ruta ajustada según tu configuración
             const { data } = response;
 
             if (data.success) {
